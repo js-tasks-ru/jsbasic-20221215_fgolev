@@ -1,18 +1,3 @@
-function sum(a)  {
-
-  let currentSum = a;
-
-  function f(b) {
-    currentSum += b;
-    return f;
-  }
-
-  f.toString = function() {
-    return currentSum;
-  };
-
-  return f;
+function sum(m, n) {
+  return m + n;
 }
-
-alert( sum(1)(1) );
-alert( sum(2)(5) );
